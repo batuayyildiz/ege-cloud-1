@@ -9,6 +9,7 @@ parser.add_argument('command', metavar="cmd", type=str, help='command to manage 
 args = parser.parse_args()
 
 
+
 def create_database():
     db = Database()
     with db.get_cursor() as cursor:
